@@ -2,15 +2,15 @@
 
 char	*ft_strchr(const char *str, int c)
 {
-	if (!ft_isascii(c))
+	if (!ft_isascii((char)c))
 		return (NULL);
 	while (*str)
 	{
-		if (*str == c)
+		if (*str == (char)c)
 			return ((char *)str);
 		str++;
 	}
-	if (!*str && !c)
+	if (!*str && !(char)c)
 		return ((char *)str);
 	return (NULL);
 }
