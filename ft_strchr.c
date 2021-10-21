@@ -1,5 +1,4 @@
-#include <stdio.h>
-int	ft_isascii(int c);
+#include "libft.h"
 
 char	*ft_strchr(const char *str, int c)
 {

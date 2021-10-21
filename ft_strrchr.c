@@ -1,7 +1,4 @@
-#include <stdio.h>
-#include <string.h>
-size_t	ft_strlen(const char *str);
-int		ft_isascii(int c);
+#include "libft.h"
 
 char	*ft_strrchr(const char *str, int c)
 {

@@ -1,4 +1,3 @@
-#include <unistd.h>
 #include "libft.h"
 
 static	int	check_neg(int n, int fd)
