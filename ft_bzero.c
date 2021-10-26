@@ -5,9 +5,10 @@ void	ft_bzero(void *str, size_t n)
 	char	*pointer;
 
 	pointer = str;
-	while (n--)
+	while (n)
 	{
 		*pointer = 0;
 		pointer++;
+		n--;
 	}
 }

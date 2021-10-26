@@ -1,4 +1,5 @@
 #include "libft.h"
+#include <stdlib.h>
 
 static	int	check_neg(int n, int i, char *ret)
 {

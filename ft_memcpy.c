@@ -1,4 +1,4 @@
-#include "libft.h"
+#include <stddef.h>
 
 void	*ft_memcpy(void *dest, const void *src, size_t n)
 {
@@ -7,7 +7,10 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 	if (!n || dest == src)
 		return (dest);
 	pointer = (unsigned char *)dest;
-	while (n--)
+	while (n)
+	{
 		*pointer++ = *((unsigned char *)src++);
+		n--;
+	}
 	return (dest);
 }
