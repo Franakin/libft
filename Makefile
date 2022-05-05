@@ -63,7 +63,7 @@ objects :
 ${NAME} :   ${OBJS}
 	ar -rcsu ${NAME} ${OBJS}
 
-bonus :	${OBJSBONUS}
+bonus 	:	${OBJSBONUS}
 	make WITH_BONUS=1
 
 clean   :   
@@ -73,4 +73,5 @@ fclean  :   clean
 	rm -f ${NAME}
 
 re      :   fclean all
-	
+
+.PHONY	:	all objects bonus clean fclean re

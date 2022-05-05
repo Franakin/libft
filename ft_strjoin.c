@@ -1,7 +1,19 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        ::::::::            */
+/*   ft_strjoin.c                                       :+:    :+:            */
+/*                                                     +:+                    */
+/*   By: fpurdom <fpurdom@student.codam.nl>           +#+                     */
+/*                                                   +#+                      */
+/*   Created: 2022/01/18 14:50:46 by fpurdom       #+#    #+#                 */
+/*   Updated: 2022/03/03 15:37:47 by fpurdom       ########   odam.nl         */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include <stdlib.h>
 #include "libft.h"
 
-char	*ft_strjoin(char const *s1, char const *s2)
+char	*ft_strjoin(char *s1, char const *s2)
 {
 	char	*ret;
 	int		i;
